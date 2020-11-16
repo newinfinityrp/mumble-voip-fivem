@@ -30,20 +30,21 @@ mumbleConfig = {
 		} -- Toggle speaker mode (phone calls)
 	},
 	radioChannelNames = { -- Add named radio channels (Defaults to [channel number] MHz)
-		[1] = "LEO Tac 1",
-		[2] = "LEO Tac 2",
-		[3] = "EMS Tac 1",
-		[4] = "EMS Tac 2",
-		[500] = "Hurr Durr 500 Hurr Durr",
+		[1] = "POLICE 1",
+		[2] = "POLICE 2",
+		[3] = "POLICE 3",
+		[4] = "POLICE/EMS 1",
+		[5] = "POLICE/EMS 2",
 	},
 	callChannelNames = { -- Add named call channels (Defaults to [channel number])
 
 	},
 	use3dAudio = true, -- Enable 3D Audio
 	useSendingRangeOnly = true, -- Use sending range only for proximity voice (don't recommend setting this to false)
-	useNativeAudio = false, -- Use native audio (audio occlusion in interiors)
-	useExternalServer = false, -- Use an external voice server (bigger servers need this), tutorial: https://forum.cfx.re/t/how-to-host-fivems-voice-chat-mumble-in-another-server/1487449?u=frazzle
-	externalAddress = "127.0.0.1",
+	useNativeAudio = true, -- change by mp - Use native audio (audio occlusion in interiors) 
+	useExternalServer = true, -- change by mp - Use an external voice server (bigger servers need this), tutorial: https://forum.cfx.re/t/how-to-host-fivems-voice-chat-mumble-in-another-server/1487449?u=frazzle
+	externalAddress = "13.67.57.189",
+	--externalPort = 64738,
 	externalPort = 30120,
 	use2dAudioInVehicles = true, -- Workaround for hearing vehicle passengers at high speeds
 	showRadioList = false, -- Optional feature to show a list of players in a radio channel, to be used with server export `SetPlayerRadioName`
